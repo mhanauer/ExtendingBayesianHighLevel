@@ -5,7 +5,7 @@ graphics.off() # This closes all of R's graphics windows.
 rm(list=ls())  # Careful! This clears all of R's memory!
 #------------------------------------------------------------------------------- 
 # Load data file and specity column names of x (predictor) and y (predicted):
-
+setwd("~/Desktop/Extending")
 myData = read.csv( file="HierLinRegressDataExtend.csv" )
 xName = "X" ; x2Name = "X2"; yName = "Y" ; sName="Subj"
 fileNameRoot = "HierLinRegressData-Jags-" 
