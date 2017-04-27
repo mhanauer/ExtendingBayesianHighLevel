@@ -6,14 +6,14 @@ rm(list=ls())  # Careful! This clears all of R's memory!
 #------------------------------------------------------------------------------- 
 # Load data file and specity column names of x (predictor) and y (predicted):
 setwd("~/Desktop/Extending")
-myData = read.csv( file="HierLinRegressThreeDataExtend.csv" )
+myData = read.csv( file="HierLinRegressDicotDataExtend.csv" )
 xName = "X" ; x2Name = "X2"; x3Name = "X3"; yName = "Y" ; sName="Subj"
 fileNameRoot = "HierLinRegressData-Jags-" 
 
 graphFileType = "eps" 
 #------------------------------------------------------------------------------- 
 # Load the relevant model into R's working memory:
-source("Jags-Ymet-XmetSsubj-Three-MrobustHierExtend.R")
+source("Jags-Ymet-XmetSsubj-Dicot-MrobustHierExtend.R")
 #------------------------------------------------------------------------------- 
 # Generate the MCMC chain:
 #startTime = proc.time()
